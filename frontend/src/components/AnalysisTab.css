@@ -1,0 +1,30 @@
+.Comprehensive-Analysis-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 탭 메뉴 스타일 */
+.Comprehensive-Analysis-indicator-tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+.Comprehensive-Analysis-indicator-tabs button {
+    background-color: #f9fafb;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    margin-right: 10px;
+}
+
+.Comprehensive-Analysis-indicator-tabs .active-tab {
+    background-color: #0071e3;
+    color: #fff;
+    border-bottom: none;
+}

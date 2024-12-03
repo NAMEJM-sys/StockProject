@@ -1,0 +1,9 @@
+.no-underline-headline {
+  text-decoration: none;
+  color: #FFFFFF; /* 또는 원하는 색상을 지정 */
+}
+
+.no-underline-other {
+  text-decoration: none;
+  color: #000000; /* 또는 원하는 색상을 지정 */
+}

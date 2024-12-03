@@ -1,0 +1,319 @@
+/* 공통 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.detail {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+.header {
+    background-color: #1c1c1e;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 컨테이너 스타일 */
+.detail-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-container {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between; /* 차트를 양 끝에 배치하고, 중간에 빈 공간 없이 채웁니다 */
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.chart-item {
+    flex-grow: 1.5; /* 각 차트가 동일한 비율로 공간을 차지하도록 설정 */
+    width: 33%; /* 각 차트의 너비를 33%로 맞춤 */
+    margin: 0; /* 차트 간 여백 제거 */
+    padding: 0; /* padding도 제거하여 차트가 꽉 차도록 설정 */
+}
+
+.chart-box {
+    width: 30%;  /* 모든 차트에 고정된 너비 부여 */
+    min-width: 200px;  /* 최소 너비 설정 */
+}
+
+.final-chart {
+  flex-grow: 2;  /* 중앙의 final-chart가 조금 더 넓게 배분되도록 설정 */
+  display: flex;
+  justify-content: space-around; /* 차트 사이의 여백을 균일하게 */
+}
+
+.table-column {
+    width: 48%; /* Two columns with equal width */
+    margin: 0 1%; /* Space between the columns */
+}
+
+.analysis-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px; /* 폰트 크기를 작게 설정 */
+    background-color: #fff;
+}
+
+.analysis-table th, .analysis-table td {
+    border-bottom: 1px solid #ddd;
+    padding: 6px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.analysis-table th {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.analysis-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-column .highlight-buy {
+    color: #007bff; /* 파란색으로 매수 강조 */
+}
+
+.analysis-table td {
+    background-color: #fff; /* 배경색을 밝게 */
+}
+
+.table-column .highlight-sell {
+    color: #ff4d4d; /* 빨간색으로 매도 강조 */
+}
+
+/* 심플한 테이블 제목 */
+.analysis-table th, .analysis-table td {
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.detail-main-content {
+    display: flex;
+    grid-template-columns: 1fr 1fr; /* 두 개의 동일한 너비 열 */
+    gap: 20px; /* 열 간의 간격 */
+    margin: 10px;
+}
+
+.data-column {
+    background-color: white; /* 필요에 따라 배경색 조정 */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 박스 그림자 */
+    border-radius: 8px; /* 모서리를 둥글게 */
+}
+
+.data-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.data-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+.data-item span {
+    color: gray; /* 텍스트 색상 */
+}
+
+
+.detail-chart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: none;
+    width: 700px; /* 고정된 너비를 설정 */
+    margin-bottom: 0;
+    min-width: 700px;
+    max-width: 700px;
+}
+
+.analysis-display {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-bottom: 0;
+    width: 30%;
+}
+
+.detail-table {
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+    z-index: 2; /* 헤더가 다른 요소 위에 있도록 합니다. */
+}
+
+.detail-chart-text{
+    margin-bottom: 10px;
+}
+
+/* 테이블 스타일 */
+.detail-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.detail-table-txt {
+    margin-bottom: 30px;
+}
+
+.detail-table th, .detail-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.detail-table td {
+    background-color: #f9fafb;
+}
+
+.detail-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.analysis-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 텍스트박스 스타일 */
+.textbox {
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.textbox h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.analysis-display-main-text{
+   margin-bottom: 70px;
+}
+
+.textbox p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* 버튼 스타일 */
+.detail-button {
+    background-color: #0071e3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.detail-button:hover {
+    background-color: #005bb5;
+}
+
+.search-bar {
+    margin-left: 25px;
+    margin-top: 80px;
+    display: flex;
+    gap: 10px;
+    width: 200px;
+
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+.search-bar select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 220px;
+}
+
+/* 지표 탭 스타일 */
+.indicator-tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.indicator-tabs button {
+    background-color: #f9fafb;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.indicator-tabs .active-tab {
+    background-color: #0071e3;
+    color: #fff;
+}
+
+.indicator-chart {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    height: 300px; /* 지표 차트의 높이 설정 */
+    overflow: auto;
+}
+

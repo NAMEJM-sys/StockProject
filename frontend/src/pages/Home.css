@@ -1,0 +1,271 @@
+
+body.home {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+}
+
+.home-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.home-table-container {
+    width: 100%;
+    max-width: 1400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    text-align: left;
+    /* 여기서 스크롤 기능 제거 */
+    overflow: hidden; /* 스크롤을 제거 */
+    max-height: 800px; /* 원하는 테이블 높이를 설정하지 않음 */
+}
+
+.home-rank-container {
+    width: 100%;
+    max-width: 1400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: block;
+    text-align: left;
+    overflow-x: auto;
+}
+
+.home-rank-container h3 {
+    margin-bottom: 15px;
+}
+
+.home-rank-container .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.home-rank-container .table th, .home-rank-container .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.home-rank-container .table td {
+    font-size: 14px;
+}
+
+.table-h3 {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.home-rank-container .table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.home-chart-container {
+    margin-bottom: 0;
+}
+
+.ad-banner {
+    height: 100%;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.header {
+    background-color: #1c1c1e;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    max-width: 1200px;
+    width: 100%;
+    border-collapse: collapse;
+    /* 테이블에 스크롤 기능 추가 */
+    overflow-y: auto;
+    max-height: 600px; /* 테이블의 최대 높이를 설정하여 스크롤을 허용 */
+}
+
+.home-realtime-table {
+    max-width: 1300px;
+    width: 100%;
+    border-collapse: collapse;
+    /* 테이블에 스크롤 기능 추가 */
+    overflow-y: auto;
+    max-height: 600px; /* 테이블의 최대 높이를 설정하여 스크롤을 허용 */
+}
+
+.table thead th {
+    position: sticky;
+    top: 0;
+    background-color: white; /* 스크롤 시 헤더가 겹쳐지지 않도록 배경 설정 */
+    z-index: 1;
+}
+
+.home-realtime-table thead th {
+    position: sticky;
+    top: 0;
+    background-color: white; /* 스크롤 시 헤더가 겹쳐지지 않도록 배경 설정 */
+    z-index: 1;
+}
+
+.home-table-scroll-wrapper {
+    max-height: 600px; /* 테이블의 최대 높이를 설정하여 스크롤을 허용 */
+    overflow-y: auto; /* 수직 스크롤 추가 */
+    overflow-x: hidden; /* 수평 스크롤 제거 */
+
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.home-realtime-table th, .home-realtime-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.home-table-head thead th{
+    position: sticky;
+    top: 60px;;
+    background-color: white; /* 스크롤 시 헤더가 겹쳐지지 않도록 배경 설정 */
+    z-index: 1;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table tr:hover {
+}
+
+.analysis {
+    font-size: 14px;
+    color: #333;
+}
+
+.tab { white-space: pre; }
+
+.chart-container-text {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 25px;
+}
+
+.more-button {
+    background-color: #0071e3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 0;
+    opacity : 40%;
+}
+
+.like-button {
+    background-color: #0071e3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 48%;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    opacity : 40%;
+
+}
+
+.profile-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    color: #000000;
+}
+
+.profile-menu p {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.profile-menu p:hover {
+    background-color: #f5f5f5;
+}
+
+.stock-name-button {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: auto; /* 버튼이 td의 너비를 꽉 채우도록 설정 */
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stock-name-button:hover {
+    background-color: #e0e0e0;
+}
+
+.table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.ratio.positive {
+    color: #0071e3;
+}
+
+.ratio.negative {
+    color: #d32f2f;
+}
+
+.home-search-bar {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.home-search-bar select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+
+

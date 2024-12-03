@@ -1,0 +1,110 @@
+/* 전반적인 스타일 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.ComprehensiveAnalysis {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f7;
+    color: #333;
+}
+
+/* 탭 스타일 */
+.Comprehensive-Analysis-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+/* 검색 바 */
+.Comprehensive-Analysis-search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 60px;
+    margin-left: 1px;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.Comprehensive-Analysis-search-bar select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 200px;
+}
+
+/* 탭 메뉴 스타일 */
+.Comprehensive-Analysis-indicator-tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.Comprehensive-Analysis-indicator-tabs button {
+    background-color: #f9fafb;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    margin-right: 10px;
+}
+
+.Comprehensive-Analysis-indicator-tabs .active-tab {
+    background-color: #0071e3;
+    color: #fff;
+    border-bottom: none;
+}
+
+/* 메인 콘텐츠 */
+.Comprehensive-Analysis-main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.Comprehensive-Analysis-main-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: none;
+    width: 100%; /* 고정된 너비를 제거하고 100%로 설정 */
+    margin-bottom: 0;
+    min-width: 700px;
+    max-width: 1500px;
+}
+
+.Comprehensive-Analysis-main-chart-container {
+    width: 100%; /* 부모 요소의 크기에 맞춰 100%로 설정 */
+}
+
+.detail-chart-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.Comprehensive-Analysis-Score {
+    font-size: 24px;
+    margin-top: 100px;
+}
+
+.Comprehensive-Analysis-Score-Tec {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Comprehensive-Analysis-Score-Tec-De {
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
