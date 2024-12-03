@@ -1,2 +1,27 @@
-node_modules
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/prontend/node_modules
+/prontend/.pnp
+/prontend.pnp.js
+
+# testing
+/prontend/coverage
+
+# production
+/prontend/build
+
+# misc
+/prontend/.DS_Store
+/prontend/.env.local
+/prontend/.env.development.local
+/prontend/.env.test.local
+/prontend/.env.production.local
+
+/prontend/npm-debug.log*
+/prontend/yarn-debug.log*
+/prontend/yarn-error.log*
+
+# IntelliJ
 .idea
