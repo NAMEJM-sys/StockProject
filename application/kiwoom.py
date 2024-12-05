@@ -148,7 +148,7 @@ class KiwoomAPI:
 
 def fetch_data():
     kospi = kiwoom.GetCodeListByMarket('0').split(';')
-    kospi = [code for code in kospi if code]
+    kospi = [code for code in kospi if code >= '167860']
 
     print("Running KiwoomAPI to fetch stock data...")
     for batch_start in range(0, len(kospi), 10):
@@ -157,11 +157,11 @@ def fetch_data():
 
         for code in batch_codes:
             if code < '236350':
-                kiwoom.get_stock_data(code, count=5)
+                kiwoom.get_stock_data(code, count=400)
                 time.sleep(0.5)
         time.sleep(2.0)
 
-    print("API 호출 완료. 1시간 뒤에 다시 실행합니다.")
+    print("API 호출 완료. 1시간 뒤에 다시 실행합니다. 167860,")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

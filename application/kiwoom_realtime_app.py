@@ -1,7 +1,6 @@
 import sys
 import json
 import redis
-import threading
 from datetime import datetime
 from PyQt5.QAxContainer import QAxWidget
 from PyQt5.QtWidgets import QApplication

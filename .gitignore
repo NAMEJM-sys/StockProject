@@ -2,26 +2,26 @@
 
 # dependencies
 /node_modules
-/prontend/node_modules
-/prontend/.pnp
-/prontend.pnp.js
+/frontend/node_modules
+/frontend/.pnp
+/frontend.pnp.js
 
 # testing
-/prontend/coverage
+/frontend/coverage
 
 # production
-/prontend/build
+/frontend/build
 
 # misc
-/prontend/.DS_Store
-/prontend/.env.local
-/prontend/.env.development.local
-/prontend/.env.test.local
-/prontend/.env.production.local
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
 
-/prontend/npm-debug.log*
-/prontend/yarn-debug.log*
-/prontend/yarn-error.log*
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
 
 # IntelliJ
 .idea

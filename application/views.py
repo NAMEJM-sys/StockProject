@@ -627,7 +627,8 @@ def delete_home_stock_codes(request):
 def step1_home_useEffect(request):
     if request.method == 'POST':
         latest_date = StockData.objects.aggregate(latest_data=Max('date'))['latest_data']
-        top_40_volume_code = StockData.objects.filter(date=latest_date).order_by('-volume')[:40].values_list('stock_code', flat=True)
+        top_40_volume_code = (StockData.objects.filter(date=latest_date).order_by('-volume')[:40]
+                              .values_list('stock_code', flat=True))
         print(top_40_volume_code)
 
         all_real_time_data = {}
@@ -664,5 +665,3 @@ def step2_home_useEffect(request):
         return JsonResponse(all_real_time_data, safe=False)
     else:
             return JsonResponse({'error': 'Invalid request method'}, status=405)
-
-

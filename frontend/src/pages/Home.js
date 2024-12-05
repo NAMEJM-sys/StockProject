@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
-import FetchStockList from "../ComponentsFetch/FetchStockOrignal/FetchStockList";
 import FetchRealTime from "../ComponentsFetch/FetchStockOrignal/FetchRealTime";
 import FetchLatestStockData from "../ComponentsFetch/FetchStockOrignal/FetchLatestStockData";
 import ChartOfClose from "../ComponentsChart/ChartOfClose";
