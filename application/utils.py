@@ -130,7 +130,7 @@ def calculate_rsi_with_fibonacci(df, period=14):
 
     return df
 
-def calculate_rsi(df, period=14):
+def calculate_rsi(df, period=14, signal_period=9):
     """
     개선된 RSI (Relative Strength Index) 계산 함수
 
@@ -143,7 +143,10 @@ def calculate_rsi(df, period=14):
     # 1. RSI 계산
     df['RSI'] = ta.rsi(df['close'], length=period)
 
-    # 2. RSI의 변화량 계산
+    # 2-1. RSI의 Signal Line
+    df['RSI_Signal_Line'] = df['RSI'].rolling(window=signal_period).mean();
+    
+    # 2-2. RSI의 변화량 계산
     df['RSI_Change'] = df['RSI'].diff()
 
     # 3. 지수 이동 표준편차를 사용하여 RSI 변동성 계산
